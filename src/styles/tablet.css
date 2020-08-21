@@ -1,0 +1,37 @@
+@media only screen and (max-width: 1023px) {
+  .service{
+    margin: 10% 0!important;
+  }
+
+  .service-card{
+    height: 240px;
+  }
+
+  .blog-single{
+    padding: 3px;
+  }
+  
+  .blog-single h2{
+    font-size: 3em;
+  }
+  
+  .social-button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .social-button{
+    font-size: 4rem!important;
+  }
+
+  .blog-container{
+    padding: 50px;
+  }
+  
+  .service-single-container>div{
+    padding: 40px;
+  }
+}

@@ -1,0 +1,235 @@
+html {
+  /* scroll-behavior: smooth; */
+}
+
+body::-webkit-scrollbar { width: 0 !important }
+body { 
+  overflow: -moz-scrollbars-none; 
+  -ms-overflow-style: none;
+  font-family: 'Baloo 2', cursive;
+  /* cursor: none; */
+}
+
+a, a:hover{
+  text-decoration: none;
+}
+
+.sr-button{
+  /* background: linear-gradient(180deg, #D92FD9 0%, #4E0D51 100%); */
+  background-color: #ffc7570a!important;
+  color: #ec9f01!important;
+  /* box-shadow: 5px 5px 5px #370c3a; */
+  border-radius: 5px!important;
+}
+
+.sr-button:hover{
+  background-color: #ffc75723!important;
+  transition: 0.3s;
+}
+
+.sr-bg{
+  min-height: 100vh;
+  /* background: radial-gradient(50% 50% at 50% 50%, #461149 0%, #240026 100%); */
+  background: #240026;
+}
+
+.home{
+  width: 90%;
+  padding: 0;
+  overflow: hidden;
+}
+
+#services{
+  height: 100%;
+  padding: 2%;
+}
+
+.landing-image{
+  width: 90%;
+  mix-blend-mode: normal;
+  /* border: 48px solid #240026; */
+  box-sizing: border-box;
+  /* box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.25), 
+              -20px 20px 20px rgba(0, 0, 0, 0.25),
+              20px -20px 20px rgba(0, 0, 0, 0.25),
+              -20px -20px 20px rgba(0, 0, 0, 0.25); */
+}
+
+.landing-image-container{
+  padding: 2%;
+  display: flex;
+  align-items: center;
+}
+
+.t-grand{
+  font-family: 'Grand Hotel', cursive!important;
+}
+
+.sr-nav-bar{
+  padding: 2%;
+}
+
+.sr-nav-link{
+  color: #ec9f01!important;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: bold!important;
+}
+
+.service-container{
+  margin-top: 4%;
+  padding: 2%;
+}
+
+.service-card{
+  background-blend-mode: color-dodge;
+  border-radius: 5px;
+  height: 220px;
+  position: relative;
+  cursor: pointer;
+  transition: .3s;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.6);
+  color: white;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+}
+
+.service-card:hover{
+  background-color: rgba(0,0,0, 0.8);
+  transform: scale(1.1);
+  z-index: 9;
+  transition: .3s;
+}
+
+.service-image{
+  width: 80%;
+  mix-blend-mode: normal;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  position: absolute;
+  left: -30%;
+  top: 30%;
+  transform: translate(50%, -50%);
+}
+
+.service-caption{
+  position: absolute;
+  bottom: 2%;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+#home-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.home-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2%;
+}
+
+.blog-image{
+  width: 100%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.blog-single-image{
+  width: 100%;
+  height: 400px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-size: cover;
+  background-clip: content-box;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.blur{
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 100%;
+}
+
+.service-card-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.sr-input{
+  width: 100%;
+  background-color: black;
+  color: #ec9f01;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 15px;
+  box-sizing: border-box;
+  height: 100%
+}
+
+.social-button-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-button{
+  color: #ec9f01;
+  width: 25%;
+  padding: 5%;
+}
+
+.social-button:hover {
+  color: #f8ae1b;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.blog-single{
+  padding: 50px;
+}
+
+.blog-container{
+  padding: 50px
+}
+
+.service-single-container>div{
+  padding: 50px;
+}
+
+.splash{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background: radial-gradient(50% 50% at 50% 50%, #390e3b 0%, #240026 100%);
+
+}
+
+.splash img{
+  width: 50%;
+}
+
+.post-content, .share-and-comment{
+  padding: 2%;
+}
