@@ -22,7 +22,7 @@ module.exports = {
     {
       resolve: "gatsby-source-strapi",
       options: {
-        apiURL: process.env.API_URL || "http://localhost:1337",
+        apiURL: process.env.API_URL || "https://saferoom-cms.herokuapp.com",
         contentTypes: [
           // List of the Content Types you want to be able to request from Gatsby.
           "post",
@@ -42,8 +42,8 @@ module.exports = {
         name: `Saferoom`,
         short_name: `saferoom`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#240026`,
+        theme_color: `#240026`,
         display: `minimal-ui`,
         // icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
