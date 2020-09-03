@@ -5,14 +5,14 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const MobileMenu = props => {
   return (
-    <div className={`d-lg-none navigation ${props.active ? 'active' : ''}`}>
+    <div className={`d-lg-none navigation ${props.active ? "active" : ""}`}>
       <div className="ham-btn" onClick={props.handleToggleActive}>
         <span></span>
         <span></span>
         <span></span>
       </div>
-      <div class="links">
-        <div class="link">
+      <div className="links">
+        <div className="link">
           <AniLink
             to="/"
             paintDrip
@@ -24,7 +24,7 @@ const MobileMenu = props => {
             Home
           </AniLink>
         </div>
-        <div class="link">
+        <div className="link">
           <AniLink
             to="/services"
             paintDrip
@@ -36,7 +36,7 @@ const MobileMenu = props => {
             Services
           </AniLink>
         </div>
-        <div class="link">
+        <div className="link">
           <AniLink
             to="/blog"
             paintDrip

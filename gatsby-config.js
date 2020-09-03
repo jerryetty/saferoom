@@ -30,6 +30,7 @@ module.exports = {
           "comment",
           "service",
           "appointment",
+          "mailing-list"
         ],
         queryLimit: 1000,
       },
