@@ -1,7 +1,7 @@
 import React from "react"
 import { Typography } from "@material-ui/core"
 
-const Podcasts = () => {
+const Shop = () => {
   return (
     <div>
       <Typography
@@ -10,7 +10,7 @@ const Podcasts = () => {
         variant="h1"
         className="t-grand"
       >
-        Podcasts
+        Shop
       </Typography>
       <Typography
         color="secondary"
@@ -18,10 +18,10 @@ const Podcasts = () => {
         variant="h6"
         className="mt-4"
       >
-        We are launching podcasts soon. Watch the space...
+        We are launching our shop soon. Watch the space...
       </Typography>
     </div>
   )
 }
 
-export default Podcasts
+export default Shop

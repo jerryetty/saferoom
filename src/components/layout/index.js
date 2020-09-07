@@ -95,7 +95,6 @@ const Layout = ({ children }) => {
     setActive(!active)
   }
 
-
   return (
     <div>
       {/* <Cursor /> */}
@@ -107,24 +106,36 @@ const Layout = ({ children }) => {
                 <img src={Logo} alt="logo" className="logo" />
               </AniLink>
             </div>
-            <div className="col-lg-7 d-none d-lg-block col-sm-4" />
-            <div className="col-lg-3 col-sm-4 col-6 text-right">
-              
+            <div className="col-lg-10 col-sm-8 col-6 text-right">
               <div className="navigation-bar d-none d-lg-block">
+                <AniLink to="/blog" paintDrip duration={1} hex="#240026">
+                  <Button className="sr-nav-link" size="large">
+                    Stories
+                  </Button>
+                </AniLink>
+                <AniLink to="/podcasts" paintDrip duration={1} hex="#240026">
+                  <Button className="sr-nav-link" size="large">
+                    Podcasts
+                  </Button>
+                </AniLink>
+                <AniLink to="/shop" paintDrip duration={1} hex="#240026">
+                  <Button className="sr-nav-link" size="large">
+                    Shop
+                  </Button>
+                </AniLink>
                 <AniLink to="services" paintDrip duration={1} hex="#240026">
                   <Button className="sr-nav-link" size="large">
                     Services
                   </Button>
                 </AniLink>
-                <AniLink to="blog" paintDrip duration={1} hex="#240026">
-                  <Button className="sr-nav-link" size="large">
-                    Blog
-                  </Button>
-                </AniLink>
               </div>
             </div>
           </div>
-          <MobileMenu handleCloseMenu={handleCloseMenu} handleToggleActive={handleToggleActive} active={active} />
+          <MobileMenu
+            handleCloseMenu={handleCloseMenu}
+            handleToggleActive={handleToggleActive}
+            active={active}
+          />
           {children}
         </div>
       </ThemeProvider>

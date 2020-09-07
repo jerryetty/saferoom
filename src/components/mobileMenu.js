@@ -26,18 +26,6 @@ const MobileMenu = props => {
         </div>
         <div className="link">
           <AniLink
-            to="/services"
-            paintDrip
-            hex="240026"
-            duration={1}
-            className="mobile-menu-link"
-            onClick={props.handleCloseMenu}
-          >
-            Services
-          </AniLink>
-        </div>
-        <div className="link">
-          <AniLink
             to="/blog"
             paintDrip
             hex="240026"
@@ -45,8 +33,40 @@ const MobileMenu = props => {
             className="mobile-menu-link"
             onClick={props.handleCloseMenu}
           >
-            Blog
+            Stories
           </AniLink>
+          <AniLink
+            to="/podcasts"
+            paintDrip
+            hex="240026"
+            duration={1}
+            className="mobile-menu-link"
+            onClick={props.handleCloseMenu}
+          >
+            Podcasts
+          </AniLink>
+          <AniLink
+            to="/shop"
+            paintDrip
+            hex="240026"
+            duration={1}
+            className="mobile-menu-link"
+            onClick={props.handleCloseMenu}
+          >
+            Shop
+          </AniLink>
+          <div className="link">
+            <AniLink
+              to="/services"
+              paintDrip
+              hex="240026"
+              duration={1}
+              className="mobile-menu-link"
+              onClick={props.handleCloseMenu}
+            >
+              Services
+            </AniLink>
+          </div>
         </div>
       </div>
     </div>

@@ -62,7 +62,7 @@ const Blog = () => {
 
   return (
     <>
-      <SEO title="Blog" />
+      <SEO title="Stories" />
       <div id="blog">
         <Typography
           variant="h1"
@@ -70,7 +70,7 @@ const Blog = () => {
           className="t-grand home-title"
           align="center"
         >
-          Blog
+          Stories
         </Typography>
         <div className="row">
           <div className="col-lg-8">
@@ -149,14 +149,17 @@ const Blog = () => {
           </div>
           <div className="col-lg-4 relative">
             <div className="fixed">
-              <Typography variant="h5" color="secondary" className="t-grand">
-                Get the latest posts in your inbox
+              <Typography
+                variant="subtitle1"
+                color="secondary"
+                className="text-center"
+              >
+                Email me for new stories
               </Typography>
               <div>
                 {/* Begin Mailchimp Signup Form */}
-                
-                
-                <div id="mc_embed_signup">
+
+                <div id="mc_embed_signup" className="text-center">
                   <form
                     action="https://app.us17.list-manage.com/subscribe/post?u=3f3e830a6f56ec571ab9e9e52&id=8e888d69b5"
                     method="post"
@@ -187,21 +190,21 @@ const Blog = () => {
                           defaultValue
                         />
                       </div>
-                      <div className="mt-3">
+                      <div className="mt-3 text-center">
                         <Button
                           type="submit"
                           name="subscribe"
                           id="mc-embedded-subscribe"
                           className="sr-button"
-                        >Subscribe</Button>
+                        >
+                          Subscribe
+                        </Button>
                       </div>
                     </div>
                   </form>
                 </div>
                 {/*End mc_embed_signup*/}
               </div>
-
-              
             </div>
           </div>
         </div>
