@@ -20,6 +20,12 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-apollo',
+      options: {
+        uri: process.env.API_URL || "https://saferoom-cms.herokuapp.com"
+      }
+    },
+    {
       resolve: "gatsby-source-strapi",
       options: {
         apiURL: process.env.API_URL || "https://saferoom-cms.herokuapp.com",
