@@ -3,9 +3,9 @@ import Link from "gatsby-plugin-transition-link"
 import { graphql } from "gatsby"
 import { Typography, Button } from "@material-ui/core"
 import { Facebook, Twitter, WhatsApp } from "@material-ui/icons"
-import FacebookIcon from '../images/icons/facebook.svg'
-import TwitterIcon from '../images/icons/twitter.svg'
-import WhatsappIcon from '../images/icons/whatsapp.svg'
+import FacebookIcon from "../images/icons/facebook.svg"
+import TwitterIcon from "../images/icons/twitter.svg"
+import WhatsappIcon from "../images/icons/whatsapp.svg"
 import Girl from "../images/assets/girl-square.png"
 import SEO from "../components/seo"
 import Moment from "react-moment"
@@ -14,7 +14,7 @@ import { DiscussionEmbed } from "disqus-react"
 
 const Post = ({ pageContext: node }) => {
   const disqusConfig = {
-    shortname: process.env.GATSBY_DISQUS_NAME || "safe-room",
+    shortname: "safe-room",
     config: { identifier: node.slug },
   }
 
@@ -73,11 +73,7 @@ const Post = ({ pageContext: node }) => {
                 <img src={FacebookIcon} alt="Share to facebook" className="social-button"/>
                 <img src={TwitterIcon} alt="Share to twitter" className="social-button"/>
               </div> */}
-            <Typography
-              variant="h2"
-              color="secondary"
-              className="t-grand"
-            >
+            <Typography variant="h2" color="secondary" className="t-grand">
               Comments
             </Typography>
             <div className="disqus">
