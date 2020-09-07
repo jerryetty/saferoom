@@ -152,37 +152,56 @@ const Blog = () => {
               <Typography variant="h5" color="secondary" className="t-grand">
                 Get the latest posts in your inbox
               </Typography>
-              <form onSubmit={formik.handleSubmit}>
-                <div className="sr-form-group">
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    onChange={formik.handleChange}
-                    value={formik.values.name}
-                    placeholder="Your Name"
-                    className="mt-3 sr-input"
-                  />
+              <div>
+                {/* Begin Mailchimp Signup Form */}
+                
+                
+                <div id="mc_embed_signup">
+                  <form
+                    action="https://app.us17.list-manage.com/subscribe/post?u=3f3e830a6f56ec571ab9e9e52&id=8e888d69b5"
+                    method="post"
+                    id="mc-embedded-subscribe-form"
+                    name="mc-embedded-subscribe-form"
+                    className="validate"
+                    target="_blank"
+                    noValidate
+                  >
+                    <div id="mc_embed_signup_scroll">
+                      <input
+                        type="email"
+                        name="EMAIL"
+                        className="sr-input mt-3"
+                        id="mce-EMAIL"
+                        placeholder="Email Address"
+                        required
+                      />
+                      {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups*/}
+                      <div
+                        style={{ position: "absolute", left: "-5000px" }}
+                        aria-hidden="true"
+                      >
+                        <input
+                          type="text"
+                          name="b_3f3e830a6f56ec571ab9e9e52_8e888d69b5"
+                          tabIndex={-1}
+                          defaultValue
+                        />
+                      </div>
+                      <div className="mt-3">
+                        <Button
+                          type="submit"
+                          name="subscribe"
+                          id="mc-embedded-subscribe"
+                          className="sr-button"
+                        >Subscribe</Button>
+                      </div>
+                    </div>
+                  </form>
                 </div>
-                <div className="sr-form-group">
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    onChange={formik.handleChange}
-                    value={formik.values.email}
-                    placeholder="Your Email"
-                    className="mt-3 sr-input"
-                  />
-                </div>
-                <div className="sr-form-group">
-                  {/* <AniLink to="/blog" paintDrip duration={1} hex="#240026"> */}
-                  <Button type="submit" className="mt-4 sr-button">
-                    Subscribe
-                  </Button>
-                  {/* </AniLink> */}
-                </div>
-              </form>
+                {/*End mc_embed_signup*/}
+              </div>
+
+              
             </div>
           </div>
         </div>
