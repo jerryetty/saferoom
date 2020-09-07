@@ -14,7 +14,7 @@ import { DiscussionEmbed } from "disqus-react"
 
 const Post = ({ pageContext: node }) => {
   const disqusConfig = {
-    shortname: process.env.GATSBY_DISQUS_NAME || "saferoom.com",
+    shortname: process.env.GATSBY_DISQUS_NAME || "safe-room",
     config: { identifier: node.slug },
   }
 
